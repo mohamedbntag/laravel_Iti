@@ -1,0 +1,206 @@
+body, html {
+    background-image: linear-gradient(135deg, #da67f7, #ffc386);
+    margin: 0;
+    background-size: 100% 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative
+}
+
+/* section back design for main section -----------*/
+
+.back {height: 100%;width: 100%;position: absolute;}
+
+.back .logo {
+    top: 75%;
+    left: 10%;
+    position: absolute;
+    content: "MAGIC";
+    color: #0000000f;
+    font-size: 3vw;
+    transform: scale(1.9);
+    font-weight: bold;
+}
+
+.back .one, .back .two,.back .three, .back .four, .back .five ,.back .six{
+    position: absolute;
+    background-color: #0000000a;
+    width: 3%;
+    height: 40%;
+    border-radius: 25px;
+    transform: rotate(332deg);
+    left: 12%;
+    top: 30%;
+}
+
+.back .two {
+    width: 5%;
+    top: 85%;
+    left: 40%;
+    border-radius: 70px;
+    transform: rotate(328deg);
+}
+
+
+.back .three {
+    width: 5%;
+    height: 99%;
+    top: 15%;
+    left: 86%;
+    border-radius: 70px;
+    transform: rotate(328deg);
+}
+
+.back .four {
+    width: 1.5%;
+    top: 85%;
+    left: 64%;
+    border-radius: 70px;
+    transform: rotate(328deg);
+}
+
+.back .five {
+    width: 1.5%;
+    top: 20%;
+    left: 95%;
+    border-radius: 70px;
+    transform: rotate(328deg);
+}
+
+.back .six {
+    width: 1.5%;
+    top: 0%;
+    left: 28%;
+    border-radius: 70px;
+    transform: rotate(328deg);
+}
+
+/* end section back design for main section -----------*/
+
+
+/* start section circle design for main section -----------*/
+.circle1,.circle2 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: repeating-linear-gradient(45deg, #fd0df6, #2effe2 100px);
+    top: 10%;
+    left: 12%;
+    z-index: 999;
+}
+
+.circle2 {
+    top: 83%;
+    left: 80%;
+    width: 30px;
+    height: 30px;
+}
+
+.circle1::after, .circle2::after {
+    content: "";
+    position: absolute;
+    top: 65%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: repeating-linear-gradient(45deg, #ff4646, #fbfbfb 100px);
+}
+
+
+/* start section circle design for main section -----------*/
+
+
+.contain {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+    transform: translate(-50%, -50%) scale(-1);
+    background-image: url(/images/main/nat.jpg);
+    background-size: 100% 100%;
+    border-radius: 30px;
+    box-shadow: 0 -15px 40px 10px #000000d9;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    transform: scale(-1);
+    display:flex
+}
+
+aside {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+aside .bolits, .links {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: x-small;
+}
+
+aside .links {margin-top: 80%;height: 30%;}
+
+aside .links .line{
+    height: 30%;
+    background: #fff;
+    width: 1%;
+}
+
+aside i {transition: all 2s linear;position: relative}
+
+aside .links .fa-amazon::after, .fa-chrome::after, .fa-envira::after {position: absolute;left: 150%;top:0}
+
+.fa-amazon::after {content: "amazon"}
+.fa-chrome::after {content: "chrome"}
+.fa-envira::after {content: "envira"}
+
+aside i:hover,.fa-heart,.fa-amazon {color: fuchsia;transition: all .8 linear;transform: scale(1.5)}
+
+
+/*------------------------- end section aside ------------*/
+
+/*------------------------- start section about Me ------------*/
+
+.about_me {
+    width: 70%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 5% 0 0 7%;
+    display: flex;
+    flex-wrap: wrap;
+    color:aliceblue;
+}
+
+.magic span {
+    font-size: 1.7vw;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 1.3vw;
+    margin: 0;
+    padding: 0;
+}
+
+.me {width: 100%;margin-top: 5%;}
+
+.about_me h2 {font-size: 2vw;margin: 0;letter-spacing: .1vw;}
+
+h3 {margin-top: 0.5vw; color:#e561a8}
+
+.form-control{
+    background-color: #fff4fdc2 !important;
+    background-clip: padding-box !important;
+    border: 2px solid #ff40bd !important;
+}

@@ -1,0 +1,360 @@
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(38deg, #6c3578, #ff09a830);
+    padding: 3% 0 0;
+    position: relative;
+    overflow: auto;
+}
+
+.main .dashboard.leftside {
+    width: 16%;
+    height: 100%;
+    border-radius: 30PX 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 99;
+}
+
+.main .dashboard.leftside img.ice {
+    position: absolute;
+    width: 105px;
+    transform: rotate(-28deg);
+    top: -60px;
+    left: 143px;
+    z-index: 99;
+}
+
+.main .dashboard.leftside .user {
+    width: 100%;
+    height: 18%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.main .dashboard.leftside .user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    margin-bottom: 5%;
+    transition: all 1s linear
+}
+
+
+.main .dashboard.leftside .user img:hover { transform:rotate(360deg)scale(1.1)}
+
+.main .dashboard.leftside h6 {
+    font-weight: 700;
+    font-size: 1.3vw;
+    color: #000;
+}
+
+.dashboard .links {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard a.link {
+    width: 85%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 1s linear;
+    margin-bottom: 5%;
+}
+
+.dashboard a.link:hover { background-color:#fb2652; color: #fff}
+
+.dashboard a.link i.fa {
+    width: 35%;
+    background: antiquewhite;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: 1s linear;
+}
+
+.dashboard .center span, .leftside span {
+    width: 65%;
+    text-align: center;
+    color: #e5dbdb;
+    font-size: .9vw;
+    font-weight: 600;
+}
+
+
+.dashboard a.link:hover i.fa, i.active.fa.fa-home.fa-lg { background-color: #d91940; color: #fff}
+
+.dashboard a.link:hover span,span.active { color: #fff}
+
+.dashboard ul.navbar-nav.link {
+    width: 85%;
+    text-align: center;
+    background: #fb2652;
+    transition: 1s linear;
+    border-radius: 12px;
+}
+
+.dashboard ul.navbar-nav.link:hover {background-color: #fb2652;}
+.dashboard a#navbarDropdown {color: aliceblue;}
+
+.dashboard .animate {
+    height: 30%;
+    background: url(/images/main/fast.png);
+    background-size: 100% 100%;
+}
+
+/*----------------start section center ------------------*/
+.center {
+    width: 65%;
+    height: 90%;
+    background-color: #f6f8f9;
+    padding: 2% 1% 0 1%;
+    border-radius: 30px;
+    position: absolute;
+    left: 16%;
+    overflow: auto;
+}
+
+.ordersForm form{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    margin-bottom: 10px;
+    z-index:999
+}
+
+/*----------------------end card icon delete*********************/
+
+.remove {
+    width: 30%;
+    height: 35%;
+    background-color: #1a1616cf;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 25px;
+    z-index: 9999;
+    display: none;
+}
+
+.remove .contain {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 1.5vw;
+    text-align: center;
+    align-content: center;
+    justify-content: space-between;
+    height:100%;
+    width: 100%;
+    position: relative;
+}
+
+.remove .icon {
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5vw;
+    color: #0cf70c;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.remove .success {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-weight: 700;
+}
+
+.remove button {
+    width: 100%;
+    background: #43ff43;
+    color: antiquewhite;
+    border: none;
+    border-radius: 0 0 25px 25px;
+    height: 30%;
+    font-weight:700
+}
+/*----------------------end card icon delete*********************/
+
+.table > :not(caption) > * > * {
+    padding: 0.5rem 0.5rem;
+    background-color: #90d1d31c;
+    border-bottom-width: 1px;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+    color: #786e6e;
+}
+
+tbody .checks {background-color: #000}
+tbody td{color: #fff !important;}
+tbody .items td{ color: #000 !important; vertical-align: middle;}
+td img{width: 80px; height:80px}
+
+
+.skills {
+    position: fixed;
+    width: 900px;
+    height: 570px;
+    z-index: 999;
+    left: 50%;
+    transform: translatex(-50%);
+    border-radius: 25px;
+    background-color: #000000d9;
+    /* margin: auto; */
+    display: none; 
+}
+
+.skills .icon {
+    position: absolute;
+    color: #bdfd38;
+    right: 0;
+    transition: all .5s linear;
+}
+
+.skills .icon:hover { transform: rotate(180deg);}
+
+.order_items {
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+
+.order_items .row {width: 100%; height: 80%;overflow: auto}
+
+.skills .card {
+    height: 170px;
+    border-radius: 20px;
+    margin-bottom: 10%;
+    background-color: #ffffff45;
+} 
+
+.imgproduct {
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.imgproduct img {width: 100%;height: 100%;    border-radius: 20px 20px 0 0;}
+
+.priceitem {
+    height: 20%;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1vw;
+    padding-left: 5%;
+}
+
+.priceitem span {color: chartreuse;}
+
+/*-----------------------------right side------------------------------------->*/
+
+
+.rightside {
+    width: 19%;
+    height: 100%;
+    right:0;
+    border-radius: 30PX 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 99;
+    align-items: center
+}
+
+.dataitem {
+    background-color: #fff;
+    width: 80%;
+    height: 18%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    transition: all 1s linear;
+}
+
+.dataitem:hover {transform: scale(1.1)}
+
+.dataitem .head {
+    height: 45%;
+    border-radius: 20px 20px 0 0;
+    background-image: linear-gradient(to right,#ff1af2, #4616a5b8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-weight: 600;
+    position: relative
+}
+
+.dataitem .head span {
+    transform: rotate(45deg) scale3d(2, 1.5, 1.5);
+    position: absolute;
+    left: 25px;
+}
+
+.dataitem .contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55%;
+    color: #0cf70c;
+    font-size: 1.5vw;
+}
+
+.dataitem .contain span {transform: scaley(2);}
+
+/*---------count box 02---------------*/
+.dataitem.count .head {background-image: linear-gradient(to right,#475ee5, #ff000094);}
+.dataitem.count .contain {color:#fb2652}
+
+/*---------users box 01---------------*/
+.dataitem.users .head , .dataitem.username .head {background-image: linear-gradient(to right,#ff0087, #ffc800);}
+.dataitem.users .contain {color:magenta}
+
+/*----------------username 01------------*/
+
+.dataitem.username .contain {
+    color:#ddd;
+    font-size:.9vw;
+    transform: scale(1);
+}
+
+/*---------count_orders box 03---------------*/
+.dataitem.count_orders .head {background-image: linear-gradient(to right,#009aff, #00ff95);}
+.dataitem.count_orders .contain {color:rgb(68, 0, 255)}
+
+/*-------------------table------------------*/
+
+.myorder > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-accent-bg: rgb(222 181 255);
+}
+
+.myorder  {--bs-table-accent-bg: #ffcff1b3;}
+.myorder tbody td {
+    color: #7e7575 !important;
+}

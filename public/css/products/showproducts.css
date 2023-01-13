@@ -1,0 +1,470 @@
+
+.main {
+    width: 100%;
+    height: 2000px;
+    background-color: #c3e5ff;
+    padding: 3% 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.leftside {
+    width: 16%;
+    height: 100%;
+    border-radius: 30PX 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 99;
+}
+
+.leftside img.ice {
+    position: absolute;
+    width: 105px;
+    transform: rotate(-28deg);
+    top: -60px;
+    left: 143px;
+    z-index: 99;
+}
+
+.leftside .user {
+    width: 100%;
+    height: 18%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.leftside .user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    margin-bottom: 5%;
+}
+
+.leftside h6 {
+    font-weight: 700;
+    font-size: 1.3vw;
+    color: #000;
+}
+
+.links {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a.link {
+    width: 85%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 1s linear;
+    margin-bottom: 10%;
+}
+
+a.link:hover { background-color:#fb2652; color: #fff}
+
+a.link i.fa {
+    width: 35%;
+    background: antiquewhite;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: 1s linear;
+}
+
+.center span, .leftside span {
+    width: 65%;
+    text-align: center;
+    color: #a7a0a0;
+    font-size: .9vw;
+    font-weight: 600;
+}
+
+
+a.link:hover i.fa, i.active.fa.fa-home.fa-lg { background-color: #d91940; color: #fff}
+
+a.link:hover span,span.active { color: #fff}
+
+ul.navbar-nav.link {
+    width: 85%;
+    text-align: center;
+    background: #fb2652;
+    transition: 1s linear;
+    border-radius: 12px;
+}
+
+ul.navbar-nav.link:hover {background-color: #fb2652;}
+a#navbarDropdown {color: aliceblue;}
+
+.animate {
+    height: 30%;
+    background: url(/images/main/fast.png);
+    background-size: 100% 100%;
+}
+
+/*----------------start section center ------------------*/
+.center {
+    width: 62%;
+    height: 100%;
+    background-color: #f6f8f9;
+    padding: 2% 1% 0 1%;
+    border-radius: 30px;
+    position: absolute;
+    left: 16%;
+}
+
+.head { position: fixed; width: 60%; z-index: 9; background: #f6f8f9; height: 30%}
+
+h3 {
+    font-size: 1.9vw;
+    font-weight: 700;
+    color: #070742;
+    font-family: auto;
+    margin-bottom: 3%;
+}
+
+.icon2{ width: 40px; height: 40px;position:absolute; animation: move 1s linear infinite alternate;}
+
+@keyFrames move {
+    0%{top:0; transform:scale(10)};
+    100%{transform: translateY(100px)};
+}
+
+.row.types {display: flex;justify-content: center;}
+
+.types .col-md-3 {
+    background: #f0f3f2;
+    height: 105px;
+    width: 85px;
+    text-align: center;
+    border-radius: 35px;
+    margin-right: 35px;
+    transition: .5s linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 10px 5px #ddd;
+}
+
+.types .col-md-3:hover, .types .active {background:#fff; box-shadow: 0 5px 10px 5px #fb26529e;}
+
+.types .col-md-3 img{ width: 80px; height: 65px}
+
+.items {
+    width: 100%;
+    left: 0;
+    padding: 0 2%;
+    position: absolute;
+    top: 15%;
+}
+
+.items  .col-md-3 { margin-bottom: 7%}
+
+.img {position: relative;width: 40px;}
+
+.items .box img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.items .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 45px;
+    border: 1px solid #ddd;
+    border-radius: 20PX 20PX 0 0;
+    position: relative;
+    background: floralwhite;
+    box-shadow: 0 10px 10px 5px #ddd;
+    transition: .5s linear;
+}
+.items .box:hover {background:#fff; box-shadow: 0 5px 10px 5px #fb26529e;}
+
+
+.boxcontain {
+    height: 160px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 20PX 20PX 0 0;
+}
+
+.boxcontain div {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.cat {margin: 10px auto !important}
+
+.price span {font-size: 15px;float: left;width: fit-content;}
+
+span.dollar {color: #000;font-weight: 700;float: right;}
+
+.box form,.button form {display: flex}
+
+.items .box .button {
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 0 0;
+    width: 100%;
+    display: none;
+}
+
+.items .box:hover .button {display:inline-flex;}
+
+.button form {width: 50%}
+.items .box  .button a, .items .box  .button button {
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%
+}
+
+.items .box  .button button {width: 100%;background: #fb2652;color: #fff}
+
+.items .box .product .fa {
+    background: #8f8383;
+    color: #fff;
+    border-radius: 50%;
+    font-size: .9vw;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    /*----------------start section right check out ------------------*/
+.rightside {
+    width: 22%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    z-index: 20;
+}
+
+.logo {
+    height: 20%;
+    background-color: #ae8ce9b3;
+    border-radius: 30px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+.itemscart {
+    position: absolute;
+    left: -5px;
+    bottom: -28px;
+    height: 48px;
+    z-index: 999;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    cursor:pointer
+}
+
+.itemscart i.fa.fa-arrow-down {
+    transform: scaleY(2);
+    color: #fb2652;
+    animation: move .5s linear infinite alternate;
+    position: absolute;
+}
+
+@keyframes move {
+    0%{top:0}
+    100%{top:8px}
+}
+
+.logo img {
+    position: absolute;
+    top: -62px;
+    left: 83px;
+    width: 215px;
+}
+
+.logo span {
+    font-size: 1.5vw;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.cart {height: 52%;overflow: auto; position:relative}
+
+
+.count {font-size: 1.5vw;font-weight:700; color: gray}
+
+.count .fa {
+    background-color: #000;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    color: chartreuse;
+    font-size: 20px;
+}
+
+.count .fa-money {margin-left: 15%}
+
+.rightside img.ice {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    transform: rotate(-45deg);
+    width: 215px;
+    z-index: -1;
+}
+
+img.icon6 {
+    position: absolute;
+    z-index: -1;
+    width: 346px;
+    top: 25%;
+    right: -25px;
+    filter: opacity(0.6);
+}
+
+.rightside button.btn.btn-danger{
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table > :not(caption) > * > * {
+    padding: 0.5rem 0.5rem;
+    background-color: var(--bs-table-bg);
+    border-bottom-width: 1px;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+    font-weight: 700;
+    color: black;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {--bs-table-accent-bg: rgb(70 22 114 / 30%);}
+/*-----------------buttons----------------*/
+.rightside button.btn.btn-warning {
+    height: 15px;
+    position: relative;
+}
+
+.rightside i.fa.fa-plus, .rightside i.fa.fa-minus{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*----------------text area--------------------*/
+
+textarea {width: 100%; background: #ffffffa6;}
+
+.rightside button.btn.btn-success {width: 100%;background: #198754e8;}
+
+.rightside button.btn.btn-success:hover {background: deeppink;}
+
+select#select {
+    width: 30%;
+    border-radius: 100px;
+    height: 55px;
+    text-align: center;
+    background-image: linear-gradient(45deg, #d9279f, #fb6c6c);
+    color: #fff;
+    font-size: 1.1vw;
+    cursor: pointer
+}
+
+select option {background:#000;border-radius: 100px;}
+
+/* start section about us for our skills------------------------------------
+============================================================================*/
+
+.skills {
+    position: fixed;
+    width: 900px;
+    height: 570px;
+    z-index: 999;
+    left: 50%;
+    transform: translatex(-50%);
+    border-radius: 25px;
+    background-color: #000000d9;
+    /* margin: auto; */
+    display: none; 
+}
+
+.skills .icon {
+    position: absolute;
+    color: #bdfd38;
+    right: 0;
+    transition: all .5s linear;
+}
+
+.skills .icon:hover { transform: rotate(180deg);}
+
+.order_items {
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+
+.order_items .row {width: 100%; height: 80%;overflow: auto}
+
+.skills .card {
+    height: 170px;
+    border-radius: 20px;
+    margin-bottom: 10%;
+    background-color: #ffffff45;
+} 
+
+.imgproduct {
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.imgproduct img {width: 100%;height: 100%;    border-radius: 20px 20px 0 0;}
+
+.priceitem {
+    height: 20%;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1vw;
+    padding-left: 5%;
+}
+
+.priceitem span {color: chartreuse;}
+
+
+/* section about us for our skills------------------------------------*/

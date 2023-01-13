@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Book Store</title>
+        <meta name="description" content="all dreams will found it here">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--name of the bage-->
+        welcome in Book Store
+        <a href="test.html" title="new" target="_blank">test</a>
+    
+    </body>
+</html>

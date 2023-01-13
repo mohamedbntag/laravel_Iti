@@ -1,0 +1,139 @@
+body, html {
+    background-image: linear-gradient(135deg, #da67f7, #ffc386);
+    margin: 0;
+    background-size: 100% 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative
+}
+
+.userCenter {
+    padding: 0;
+    overflow: hidden;
+    left: 20%;
+    width: 70%;
+}
+
+.contain {height: 100%;}
+
+.contain .col-md-6.leftside {
+    background: #f3f4f5;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contain .col-md-6.leftside .circle {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    
+}
+
+.contain .col-md-6.leftside .circle1 {
+    top: -5%;
+    left: 75%;
+    background-image: linear-gradient(45deg,#148aff, black);
+}
+
+.contain .col-md-6.leftside .circle1::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -97%;
+    background-image: linear-gradient(45deg,#ed7ad0, #ff6a6a);
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+}
+
+.contain .col-md-6.leftside .circle1::after {
+    content: "";
+    position: absolute;
+    top: 180%;
+    right: 245%;
+    background-image: linear-gradient(45deg,#212529, #21c0ff);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.contain .circle2 {
+    bottom: -13%;
+    right: -13%;
+    background-image: linear-gradient(45deg,#ed7ad0, #ff6a6a);
+}
+
+.contain .col-md-6.leftside .circle2::after {
+    content: "";
+    position: absolute;
+    bottom: 70%;
+    right: 75%;
+    background-image: linear-gradient(45deg,#212529, #21c0ff);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.contain .shapes {
+    width: 35%;
+    height: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    transform: rotate(-30deg);
+}
+
+.contain .shape {
+    width: 100%;
+    height: 23%;
+    background-color: #07075a;
+    border-radius: 30px;
+    position:relative
+}
+
+.contain .shape.shape3 {width: 55%; position: relative}
+
+.contain .shape.shape3::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 39px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg,#212529, #21c0ff);
+    right: -80px;
+    top: -4px;
+}
+
+.contain .store {
+    margin-top: 5%;
+    color: #07075a;
+    font-size: 1.5vw;
+    transform: scalex(1.3);
+    font-weight: bold;
+    text-align: center;
+}
+
+.contain .row > * { padding-left: 0 !important}
+
+/*---------------------------right side form input ------------------------------------*/
+
+.contain .card {height: 100%;}
+
+.contain .card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    displAY: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(100deg,#ffffffbd, #21a1d48c);
+}
+
+.contain .card form {box-sizing: border-box; width: 100%;}
+
+.contain .card form .form-control { width: 115%;}

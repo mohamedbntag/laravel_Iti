@@ -1,0 +1,43 @@
+body, html {
+    background-image: linear-gradient(135deg, #00f3ff3d, #00f3ff3d);
+    margin: 0;
+    background-size: 100% 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative
+}
+main.py-4 {
+    height: 92%;
+    width: 100%;
+    position: absolute;
+    background-color: #7fffd3;
+    padding: 0 !important;
+    display: flex
+}
+
+/*-------------------------start section items---------------------*/
+.items {
+    width: 70%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.check {
+    width: 30%;
+    height: 100%;
+    background-color: black
+}
+
+h3 {
+    text-align: center;
+    background-color: aliceblue;
+    margin: 5% 0;
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+.order {
+    height: 80%;
+    overflow: auto;
+    background-color: aqua;
+}
